@@ -1,12 +1,14 @@
 # -*- coding: utf-8 -*-
 """
-Pytorch implementation of [1].
+Pytorch model based on Glow and AlignFlow [6].
+The major difference to AlignFlow is the use of VAE-style reconstruction loss instead of GAN discriminators to enforce cycle consistency.
 
 [1] D. P. Kingma, et al. "Glow: Generative Flow with Invertible 1x1 Convolutions", https://arxiv.org/abs/1807.03039
 [2] L. Dinh, et al. "Density estimation using Real NVP", https://arxiv.org/abs/1605.08803
 [3] Nalisnick et al. “Do Deep Generative Models Know what They Don’t Know?”, ICLR 2019. https://arxiv.org/abs/1810.09136
 [4] Han Zhang, et. al., "Self-Attention Generative Adversarial Networks." arXiv preprint arXiv:1805.08318 (2018)
 [5] Wang, Xiaolong, et. al. "Non-local neural networks." CVPR, 2018.
+[6] Aditya Grover et al. "AlignFlow: Cycle Consistent Learning from Multiple Domains via Normalizing Flows." arXiv Preprint, 2019
 """
 
 import sys
